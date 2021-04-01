@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ApplicationContextInfoTest {
 
-    ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
 
     @DisplayName("모든 빈 출력")
@@ -19,5 +19,5 @@ public class ApplicationContextInfoTest {
             System.out.println("bean = " + bean);
         }
     }
-    
+
 }
