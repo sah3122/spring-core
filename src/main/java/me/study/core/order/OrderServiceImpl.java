@@ -1,12 +1,11 @@
 package me.study.core.order;
 
 import me.study.core.discount.DiscountPolicy;
-import me.study.core.discount.FixDiscountPolicy;
-import me.study.core.discount.RateDiscountPolicy;
 import me.study.core.member.Member;
 import me.study.core.member.MemberRepository;
-import me.study.core.member.MemoryMemberRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
